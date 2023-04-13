@@ -1,0 +1,16 @@
+.fastfood {
+ 
+    display: flex;
+    flex-wrap:  wrap;
+    margin-top: 6%;
+    justify-content: center;
+    /* flex-direction: column; */
+    align-items: center;
+    
+
+}
+.fastfood :hover{
+    background-color: whitesmoke ;
+    border-color: #2fff6de8;
+    
+}

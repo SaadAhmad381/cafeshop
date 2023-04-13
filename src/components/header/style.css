@@ -1,0 +1,56 @@
+  .logo {
+    color: #2fff6de8;
+    margin-left: 10%;
+    
+}
+.login {
+    display: flex;
+    margin-right: 7%;
+    
+} 
+.header{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.main1{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin-top: 2%;
+}.login button{
+    width: 70px;
+    height: 50%;
+    margin-top: 14%;
+    background-color: #2fff6de8;
+    border-color:#2fff6de8 ;
+    border-radius: 5px;
+}
+.personIcon{
+    margin-top: 14%;
+    margin-top: 14%;
+}
+.cart{
+    width: 45px;
+    height: 70%;
+    margin-top: 10%;
+   
+    margin-left: 8%;
+}
+
+
+.info {
+    display: flex;
+}
+
+
+.info span {
+    padding: 0 3%;
+    
+    display: flex;
+}
+.cart button{
+    width: 46px;
+    height: 75%;
+
+}

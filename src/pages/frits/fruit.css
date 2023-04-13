@@ -1,0 +1,41 @@
+.fruits {
+ 
+    display: flex;
+    flex-wrap:  wrap;
+    margin-top: 6%;
+    justify-content: center;
+    /* flex-direction: column; */
+    align-items: center;
+    
+
+}
+.fruits :hover{
+    background-color: whitesmoke ;
+    border-color:  #2fff6de8;
+    
+}
+.fruits :active{
+    background-color: orange;
+}
+
+
+.card{border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.027) ; 
+    text-align: center;
+    background-color: whitesmoke;
+    width: 120px;
+    height: auto;
+    padding: 1%;
+    margin-left: 3%;
+    flex-wrap: wrap;
+    margin-top: 4%;
+}
+.card button{
+    background-color:  #2fff6de8;
+    border-radius: 4%;
+    border-color:  #2fff6de8;
+    padding: 6% 12%;
+    margin-top: 18%;
+    
+   
+}
