@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="App">
       {/* <NavLink to="/da">DashBoard</NavLink> */}
-      <Products />
+
       <BrowserRouter>
         <Routes>
           <Route path="/dashboard" element={<DashBoard />} />
@@ -22,6 +22,7 @@ function App() {
             <Route path="/Header" element={<Header />} />
             <Route path="/fastfood" element={<Fastfood />} />
             <Route path="/Cart" element={<Cart />} />
+            <Route path="/Products" element={<Products />} />
           </Route>
         </Routes>
       </BrowserRouter>
