@@ -1,0 +1,32 @@
+.products {
+ 
+    display: flex;
+    flex-wrap:  wrap;
+    margin-top: 6%;
+    justify-content: center;
+    /* flex-direction: column; */
+    align-items: center;
+    
+
+}
+.products :hover{
+    background-color: whitesmoke ;
+    border-color:  #2fff6de8;
+    
+}
+.products :active{
+    background-color: orange;
+}
+
+
+.card{border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.027) ; 
+    text-align: center;
+    background-color: whitesmoke;
+    width: 120px;
+    height: auto;
+    padding: 1%;
+    margin-left: 3%;
+    flex-wrap: wrap;
+    margin-top: 4%;
+}
