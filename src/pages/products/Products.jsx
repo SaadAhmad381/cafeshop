@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import axios from "axios";
 import { useState } from "react";
+import "product.css";
 
 const Products = () => {
   const [data, setData] = useState([]);
@@ -15,14 +16,14 @@ const Products = () => {
   }, []);
 
   return (
-    <div>
-      {data.map((m) => {
-        <div className="api">
+    <div className="products">
+      {data.map((m) => (
+        <div className="card">
           <img src={m.image} alt="no image" height="150px" width="150px" />
-          <h5> {m.id}</h5>
+          <h5>{m.id}</h5>
           <p>{m.price}</p>
-        </div>;
-      })}
+        </div>
+      ))}
     </div>
   );
 };

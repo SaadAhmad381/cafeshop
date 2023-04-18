@@ -28,7 +28,7 @@ const Menu = () => {
             className="shakes"
             to="/FastFood"
             style={({ isActive }) => ({
-              color: isActive ? "orange" : "white",
+              backgroundColor: isActive ? "orange" : "",
             })}
           >
             FastFood{" "}
@@ -47,10 +47,12 @@ const Menu = () => {
 
           <NavLink
             className="shakes"
-            to="/Shakes"
-            style={({ isActive }) => ({ color: isActive ? "orange" : "white" })}
+            to="/Products"
+            style={({ isActive }) => ({
+              backgroundColor: isActive ? "orange" : "",
+            })}
           >
-            shakes{" "}
+            Products{" "}
           </NavLink>
         </div>
       </div>
