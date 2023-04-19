@@ -12,6 +12,12 @@
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+     /* position: fixed;  */
+}
+.fix{
+    position: fixed;
+    width: 80%;
+    background-color: white;
 }
 .main1{
     display: flex;

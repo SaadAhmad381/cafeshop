@@ -10,7 +10,14 @@ const Products = () => {
       setData(res.data);
     });
   }
-  console.log("data", data);
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    localStorage.setItem("products", JSON.stringify(products));
+  }, [products]);
+  console.log("products", products);
+
+  // console.log("data", data);
   useEffect(() => {
     myFunctin();
   }, []);
@@ -19,9 +26,12 @@ const Products = () => {
     <div className="products">
       {data.map((m) => (
         <div className="card">
-          <img src={m.image} alt="no image" height="150px" width="150px" />
-          <h5>{m.id}</h5>
+          <img src={m.image} alt="no image" height="100px" width="100px" />
+          <h4>{m.id}</h4>
           <p>{m.price}</p>
+          <button type="button" onClick={() => setProducts([...products, m])}>
+            <b>Add to Cart</b>
+          </button>
         </div>
       ))}
     </div>

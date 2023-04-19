@@ -7,15 +7,13 @@ const Cart = () => {
   var totalArray = [];
   var farray = [];
   farray = JSON.parse(localStorage.getItem("fruits")) ?? [];
-  // var totalArray = [];
+  var productArray = [];
+  productArray = JSON.parse(localStorage.getItem("products")) ?? [];
+
   var fast = [];
   fast = JSON.parse(localStorage.getItem("items")) ?? [];
-  totalArray = farray.concat(fast);
+  totalArray = farray.concat(fast, productArray);
   const [count, setCount] = useState(1);
-
-  // useEffect(() => {
-  //   setfarray();
-  // }, []);
 
   console.log("totalArray", totalArray);
   console.log("farray", farray);
@@ -49,7 +47,9 @@ const Cart = () => {
       <br />
       <h3>
         TotalPrice : RS {totalPrice.reduce(sumFunction, 0)} &nbsp;&nbsp;
-        <button onClick={() => localStorage.clear()}>PlaceOrder</button>
+        <button onClick={() => localStorage.clear()}>
+          <b>PlaceOrder</b>
+        </button>
       </h3>
     </div>
   );
