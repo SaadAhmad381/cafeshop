@@ -7,16 +7,12 @@ const Fastfood = () => {
   useEffect(() => {
     localStorage.setItem("items", JSON.stringify(items));
   }, [items]);
-  // const newitem = () => {
-  //   const onclick = () => {};
-  // };
 
-  // setMyArray(oldArray => [...oldArray, newElement]);
   return (
     <div className="fastfood">
       {arr1.map((data) => (
         <div className="card">
-          <img src={data.image} alt="no image" height="70px" width="70px"></img>
+          <img src={data.image} alt="no image" height="90px" width="90px"></img>
           <h4>{data.name}</h4>
           <p>{data.price}</p>
           <button type="button" onClick={() => setItem([...items, data])}>

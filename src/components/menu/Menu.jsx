@@ -18,8 +18,8 @@ const Menu = () => {
         <img
           src="https://fxplus.ac.uk/wp-content/uploads/2022/03/ESI-CAFE-website-930x620-1.jpg"
           alt="no image"
-          width="150"
-          height="150"
+          width="180px"
+          height="180px"
         />{" "}
         <br />
         <br />
@@ -31,7 +31,7 @@ const Menu = () => {
               backgroundColor: isActive ? "orange" : "",
             })}
           >
-            FastFood{" "}
+            <b>FastFood </b>
           </NavLink>
           <br />
           <NavLink
@@ -41,7 +41,7 @@ const Menu = () => {
               backgroundColor: isActive ? "orange" : "",
             })}
           >
-            Fruits{" "}
+            <b>Fruits </b>
           </NavLink>
           <br />
 
@@ -52,7 +52,7 @@ const Menu = () => {
               backgroundColor: isActive ? "orange" : "",
             })}
           >
-            Products{" "}
+            <b>Products </b>
           </NavLink>
         </div>
       </div>

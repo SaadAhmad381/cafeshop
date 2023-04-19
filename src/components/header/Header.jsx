@@ -15,7 +15,7 @@ const Header = () => {
   const navigate = useNavigate();
 
   return (
-    <>
+    <div className="fix">
       <div className="header">
         <div className="logo">
           <h1>
@@ -55,7 +55,7 @@ const Header = () => {
         </div>
       </div>
       <hr />
-    </>
+    </div>
   );
 };
 
